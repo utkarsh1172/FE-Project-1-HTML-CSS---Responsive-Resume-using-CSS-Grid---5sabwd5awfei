@@ -6,4 +6,111 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
 /* Write CSS code below */
+
+.main-content{
+    min-height:1000px;
+    width:90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 300px 700px;
+}
+
+.left-section{
+     grid-column: span 1;
+     background-color: rgb(61, 59, 59);
+}
+
+.right-section{
+    grid-column: span 1/span 2;
+    background-color: cornsilk;
+}
+
+.profile-details{
+    color: cornsilk;
+}
+
+
+.left-content{
+    padding: 1rem;
+}
+.profile-image{
+   
+    display: block;
+    margin: auto;
+    border: 5px solid cornsilk;
+    border-radius: 30%;
+    width: 60%;
+}
+
+.name{
+   font-size: 1.2rem;
+   font-weight: 700;
+   padding: 0.8rem;
+   text-align: center;
+   text-transform: uppercase;
+}
+.designation{
+   font-size: 1rem;
+   text-align: center;
+   text-transform: uppercase;
+   padding-bottom: 0.5rem;
+}
+.description{
+    font-size: 0.75;
+    text-align: center;
+    padding: 1rem;
+}
+
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.icon{
+    font-size: 25px;
+    border-radius: 5px;
+    width: 25px;
+    text-align: center ;
+    background-color: cornsilk;
+}
+
+.progress-bar{
+    border: 1px solid white;
+    height: 4px;
+    background-color: cornsilk;
+}
+
+
+/* right section css */
+
+.right-main-content{
+    padding :32px 48px 32px 48px;
+   
+}
+
+.right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+.table{
+    border: 4px solid rgb(61, 59, 59);
+    border-collapse: collapse;
+    text-align: center;
+}
+tr, th,td{
+    border: 2px solid rgb(61, 59, 59);
+    
+}
+
+
+@media  screen and (max-width: 674px) {
+    .main-content {
+    grid-template-columns: repeat(1,1fr);
+    }
+  }
