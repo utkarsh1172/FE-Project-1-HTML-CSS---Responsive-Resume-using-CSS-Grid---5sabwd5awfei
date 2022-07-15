@@ -24,7 +24,6 @@
 .right-section {
   grid-column: span 1 / span 2;
   background-color: cornsilk;
-  width: 90%;
 }
 
 .profile-details {
