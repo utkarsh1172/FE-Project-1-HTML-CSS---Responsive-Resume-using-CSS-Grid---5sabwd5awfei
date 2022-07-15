@@ -1,127 +1,138 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    list-style: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
 
 /* Write CSS code below */
 
-.main-content{
-    min-height:1000px;
-    width:90%;
-    margin: 20px auto;
-    display: grid;
-    grid-template-columns: 300px 700px;
+.main-content {
+  min-height: 1000px;
+  width: 90%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 300px 700px;
 }
 
-.left-section{
-     grid-column: span 1;
-     background-color: rgb(61, 59, 59);
+.left-section {
+  grid-column: span 1;
+  background-color: rgb(61, 59, 59);
 }
 
-.right-section{
-    grid-column: span 1/span 2;
-    background-color: cornsilk;
+.right-section {
+  grid-column: span 1 / span 2;
+  background-color: cornsilk;
 }
 
-.profile-details{
-    color: cornsilk;
+.profile-details {
+  color: cornsilk;
 }
 
-
-.left-content{
-    padding: 1rem;
+.left-content {
+  padding: 1rem;
 }
-.profile-image{
-   
-    display: block;
-    margin: auto;
-    border: 5px solid cornsilk;
-    border-radius: 30%;
-    width: 60%;
+.profile-image {
+  display: block;
+  margin: auto;
+  border: 5px solid cornsilk;
+  border-radius: 30%;
+  width: 60%;
 }
 
-.name{
-   font-size: 1.2rem;
-   font-weight: 700;
-   padding: 0.8rem;
-   text-align: center;
-   text-transform: uppercase;
-   letter-spacing: 0.02px;
+.name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.02px;
 }
-.designation{
-   font-size: 1rem;
-   text-align: center;
-   text-transform: uppercase;
-   padding-bottom: 0.5rem;
+.designation {
+  font-size: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
 }
-.description{
-    font-size: 0.75rem;
-    text-align: center;
-    padding: 1rem;
-}
-
-.social-icons{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
-}
-.icon{
-    font-size: 25px;
-    border-radius: 5px;
-    width: 25px;
-    text-align: center ;
-    background-color: cornsilk;
+.description {
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 1rem;
 }
 
-.progress-bar{
-    border: 1px solid white;
-    height: 4px;
-    background-color: cornsilk;
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
-.skills{
-    font-size: 0.75rem;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 1rem 0.5rem 1rem 0.5rem;
+.icon {
+  font-size: 25px;
+  border-radius: 5px;
+  width: 25px;
+  text-align: center;
+  background-color: cornsilk;
 }
-.skill-name{
-    font-size: 0.65rem;
-    text-align: left;
-    padding-bottom: 0.5rem;
+
+.progress-bar {
+  border: 1px solid white;
+  height: 4px;
+  background-color: cornsilk;
+}
+.skills {
+  font-size: 0.75rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+}
+.skill-name {
+  font-size: 0.65rem;
+  text-align: left;
+  padding-bottom: 0.5rem;
 }
 
 /* right section css */
 
-.right-main-content{
-    padding :32px 48px 32px 48px;
-   
+.right-main-content {
+  padding: 32px 48px 32px 48px;
 }
 
-.right-title{
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    font-weight: 700;
-    padding: 0.5rem;
-    letter-spacing: 1px;
+.right-title {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.5rem;
+  letter-spacing: 1px;
 }
-.table{
-    border: 4px solid rgb(61, 59, 59);
-    border-collapse: collapse;
-    text-align: center;
+.table {
+  border: 4px solid rgb(61, 59, 59);
+  border-collapse: collapse;
+  text-align: center;
 }
-tr, th,td{
-    border: 2px solid rgb(61, 59, 59);
-    
+tr,
+th,
+td {
+  border: 2px solid rgb(61, 59, 59);
 }
 
-
-@media  screen and (max-width: 674px) {
-    .main-content {
-    grid-template-columns: repeat(1,1fr);
-    }
+@media screen and (max-width: 674px) {
+  .main-content {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
+    margin: 0;
+    width: 100%;
   }
+}
+
+/* 
+  @media screen and (min-width: 674px) {
+    .main-content{
+        grid-template-columns: 300px 700px;
+        min-height:1000px;
+    width:90%;
+    margin: 20px auto;
+    display: grid;
+    
+
+    }
+  } */
