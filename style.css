@@ -1,4 +1,4 @@
-* {
+9* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -121,21 +121,7 @@ td {
 @media screen and (max-width: 674px) {
   .main-content {
     grid-template-columns: repeat(1, 1fr);
-    padding: 0;
-    margin: 0;
-    width: 100%;
+
   }
 }
 
-/* 
-  @media screen and (min-width: 674px) {
-    .main-content{
-        grid-template-columns: 300px 700px;
-        min-height:1000px;
-    width:90%;
-    margin: 20px auto;
-    display: grid;
-    
-
-    }
-  } */
